@@ -1,0 +1,61 @@
+[05-May-2021 21:59:30 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cryptoad_wallet.migrations' doesn't exist in /home/cryptoadmin/public_html/wallet/vendor/laravel/framework/src/Illuminate/Database/Connection.php:326
+Stack trace:
+#0 /home/cryptoadmin/public_html/wallet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(326): PDO->prepare('select * from `...')
+#1 /home/cryptoadmin/public_html/wallet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(657): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#2 /home/cryptoadmin/public_html/wallet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 /home/cryptoadmin/public_html/wallet/vendor/laravel/framework/src/Illuminate/Database/Connection.php(333): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#4 /home/cryptoadmin/public_html/wal in /home/cryptoadmin/public_html/wallet/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
+[21-May-2021 11:34:04 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'cryptoad_wallet'@'localhost' to database 'cryptoad_wallet' in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'cryptoad_wallet', 'Ly@jm7Qy4dJv', Array)
+#1 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'cryptoad_wallet', 'Ly@jm7Qy4dJv', Array)
+#2 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactor in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
+[21-May-2021 11:35:36 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'cryptoad_app'@'localhost' (using password: YES) in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#1 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#2 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
+[21-May-2021 11:35:38 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'cryptoad_app'@'localhost' (using password: YES) in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#1 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#2 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
+[21-May-2021 11:35:53 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'cryptoad_app'@'localhost' (using password: YES) in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#1 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#2 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
+[21-May-2021 11:35:56 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'cryptoad_app'@'localhost' (using password: YES) in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#1 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#2 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
+[21-May-2021 11:35:57 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'cryptoad_app'@'localhost' (using password: YES) in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#1 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'cryptoad_app', 'BrhKPGt3WF6PLCR', Array)
+#2 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): in /home/cryptoadmin/public_html/app/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
+[19-Nov-2021 23:35:33 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) in /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connectors\MySqlConnector->connect(Array) in /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
+[19-Nov-2021 23:36:01 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) in /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connectors\MySqlConnector->connect(Array) in /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
+[19-Nov-2021 23:36:07 Asia/Dhaka] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) in /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70
+Stack trace:
+#0 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(182): Illuminate\Database\Connectors\MySqlConnector->connect(Array) in /home/edulifeb/public_html/defi/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 664
